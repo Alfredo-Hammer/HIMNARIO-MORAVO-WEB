@@ -1,0 +1,117 @@
+.slider-container {
+  position: relative;
+  width: 0 auto;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.slide-text h1 {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+.search-box {
+  width: 70%;
+  height: 40px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(51, 40, 40, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.search-btn{
+  position: absolute;
+  width: 250px;
+  height: auto;
+  background-color: aqua;
+}
+
+.search-txt{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+  
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  font-size: 1rem;
+  color: #b9aeae;
+}
+
+.search-btn{
+  border: none;
+  outline: none;
+  background: none;
+  color: #c4bdbd;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.controls button:hover {
+  color: #BBB;
+}
+
+@media screen and (max-width: 600px) {
+  .slide-text h1 {
+    font-size: 20px;
+  }
+}
+  
+

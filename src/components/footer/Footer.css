@@ -1,0 +1,66 @@
+.footer {
+  width: 100%;
+  background: radial-gradient(circle, rgba(185, 78, 124, 0.998) 0%, rgb(2, 23, 46) 100%);
+  color: #555;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.footer-content {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.footer-links a:hover {
+  color: #333;
+}
+
+.footer-social a {
+  color: #ba9305;
+  font-size: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-social a:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  width: 100%;
+  color: #dbdbd7;
+  text-align: center;
+  margin: 5px;
+}
+
+.footer-bottom span{
+  color: #797976;
+  font-style: bold;
+  text-decoration: none;
+}
+
+.link{
+  color: #ba9305;
+  font-style: bold;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.moravo{
+  font-size: 14px;
+  color: #ba9305;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}

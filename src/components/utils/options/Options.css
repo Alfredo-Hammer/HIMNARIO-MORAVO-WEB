@@ -1,0 +1,47 @@
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:3px;
+  background: radial-gradient(circle, rgba(185, 78, 124, 0.998) 0%, rgb(2, 23, 46) 100%);
+  padding: 10px;
+}
+
+.option-item {
+  width: calc(25% - 20px);
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.option-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.option-name {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.options-link {
+  text-decoration: none;
+  color: #3d3838;
+}
+
+@media only screen and (max-width: 600px) {
+  .option-item {
+    width: calc(50% - 20px);
+  }
+}
+@media only screen and (max-width: 300px) {
+  .option-item {
+    width: 100%;
+  }
+}
