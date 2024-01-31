@@ -11,10 +11,12 @@ import HimnoSearch from "./components/pages/HimnoSearch";
 import HimnoDetail from "./components/pages/HimnoDetail";
 import PrivacyPolicyPage from "./components/privacidad/PrivacyPolicyPage";
 import ScrollToTopOnMount from "./funciones/ScrollToTopOnMount";
+import analytics from "./Firebase/FirebaseAnalitics";
 
 function App() {
   return (
     <Fragment>
+
       <ScrollToTopOnMount />
       <header>
         <Navbar />
