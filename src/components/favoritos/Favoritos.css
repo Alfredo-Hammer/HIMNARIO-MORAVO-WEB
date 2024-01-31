@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 body {
-   background: radial-gradient(
-    circle,
-    rgba(73, 37, 53, 0.998) 0%,
-    rgb(2, 23, 46) 100%
-  );
+  background: rgb(4, 35, 54);
   box-sizing: border-box;
 }
 .favorite_list {
@@ -14,20 +11,23 @@ body {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
-  
 }
 
 .favorite_title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 50px;
   color: #e9e0e0;
   margin-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
-
+  font-weight: 100;
+  font-family: "Great Vibes", cursive;
 }
 
 .favorite_item {
-  background: radial-gradient(circle, rgba(99, 45, 69, 0.998) 0%, rgb(2, 23, 46) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(7, 23, 48, 0.998) 0%,
+    rgb(13, 27, 41) 100%
+  );
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -39,18 +39,19 @@ body {
   cursor: pointer;
 }
 
-.numero-title{
+.numero-title {
   font-size: 20px;
   font-weight: bold;
   color: #d3c7c7;
   margin-right: 20px;
 }
 
-
 .texto-title {
   width: 100%;
   font-size: 1rem;
   color: #d3c7c7;
+  font-family: "Roboto" "Courier New", Courier, monospace;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 768px) {
@@ -60,16 +61,20 @@ body {
     align-items: center;
     scroll-behavior: smooth;
   }
-  .favorite_title{
-    font-size: 1rem;
+  .favorite_title {
+    font-size: 30px;
   }
 
   .favorite_item {
-    font-size: 1rem;
+    font-size: 18px;
+    font-family: "Roboto", cursive;
+    font-weight: 100;
   }
 
   .texto-title {
-    font-size: 1rem;
+    font-size: 18px;
+    font-family: "Roboto", cursive;
+    font-weight: 100;
   }
 
   .numero-title {

@@ -24,7 +24,7 @@ const HimnoSearch = () => {
       const result = himnosData.find(himno => himno.numero === numero);
       if (result) {
         // Utilizamos navigate para redirigir al usuario a la página del himno
-        navigate(`/himno/${result.numero}`);
+        navigate(`/himno/${result.numero}/${result.titulo}`);
       } else {
         showMessage2();
         handleClear();

@@ -42,6 +42,8 @@ a.titulo {
 .texto {
   font-size: 18px;
   color: #d3c7c7;
+  font-family: "Roboto" "Courier New", Courier, monospace;
+  font-weight: 100;
 }
 
 .titulo:hover {

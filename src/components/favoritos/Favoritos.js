@@ -35,7 +35,7 @@ const Favoritos = () => {
 
           <Link to={
             {
-              pathname: `/himno/${item.numero}`,
+              pathname: `/himno/${item.numero}/${item.titulo}`,
               state: {
                 numero: item.numero,
                 titulo: item.titulo,

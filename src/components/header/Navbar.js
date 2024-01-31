@@ -18,7 +18,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
     setShowMenu(!showMenu);
   };
-
   return (
     <nav className="navbar">
       <Link className="navbar-brand" to="/">
@@ -63,6 +62,14 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             <li className="nav-item">App Android</li>
+          </Link>
+          <hr className="line" />
+          <Link
+            className="nav-link"
+            to="/privacy-policy"
+            onClick={closeMenu}
+          >
+            <li className="nav-item">Privacidad</li>
           </Link>
           <hr className="line" />
         </ul>
