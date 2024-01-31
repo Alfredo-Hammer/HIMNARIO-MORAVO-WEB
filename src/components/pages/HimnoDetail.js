@@ -2,17 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import Swal from "sweetalert2";
+import './HimnoDetail.css';
 
 
 const HimnoDetail = ({ himnosData }) => {
   const { numero, titulo, parrafos } = useParams();
   const [favorito, setFavorito] = useState(false);
-  const [isFavoriteIcon, setIsFavoriteIcon] = useState(false);
+
   const himno = himnosData.find(himno => himno.numero === parseInt(numero));
 
-  const handleClick = () => {
-    setIsFavoriteIcon(!isFavoriteIcon);
-  };
 
 
   useEffect(() => {

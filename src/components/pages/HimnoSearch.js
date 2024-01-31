@@ -81,10 +81,6 @@ const HimnoSearch = () => {
       }
     });
   }
-
-
-
-
   return (
     <div className="himno-search-container">
       <img className='logo' src={logo} alt='logo-principal' />
