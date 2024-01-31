@@ -1,117 +1,132 @@
-.slider-container {
-  position: relative;
-  width: 0 auto;
-  min-height: 100vh;
-  overflow: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 700px;
+.container {
+  background-image: url("../assets/fondo-web.png");
   background-size: cover;
   background-position: center;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slide.active {
-  opacity: 1;
-}
-
-.slide-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.content {
   text-align: center;
   color: #fff;
 }
 
-.slide-text h1 {
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
+.main-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
 }
 
-.controls {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+.buttons {
+  margin-top: 40px;
+}
+.logo-home {
+  display: none;
 }
 
-.controls button {
-  background-color: transparent;
-  border: none;
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
   color: #fff;
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  background: rgb(37, 98, 136);
 }
-.search-box {
-  width: 70%;
-  height: 40px;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background: rgba(51, 40, 40, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 40px;
+.btn2 {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  background-color: #fff;
 }
 
-.search-btn{
-  position: absolute;
-  width: 250px;
-  height: auto;
-  background-color: aqua;
+.btn:hover {
+  background-color: #f5eded;
+  color: black;
 }
 
-.search-txt{
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  background: none;
-  color: #fff;
-  font-size: 1rem;
-  padding: 0 10px;
-}
-  
+@media (max-width: 768px) {
+  .container {
+    background-size: cover;
+    background-position: center;
+  }
+  .main-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 25px;
+  }
+  .container .content p {
+    text-align: center;
+    font-size: 14px;
+  }
 
-.search-box input {
-  border: none;
-  outline: none;
-  background: none;
-  width: 100%;
-  font-size: 1rem;
-  color: #b9aeae;
-}
+  .btn {
+    display: block;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .btn2 {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  .logo-home {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 6px rgba(243, 243, 241, 0.925);
+  }
 
-.search-btn{
-  border: none;
-  outline: none;
-  background: none;
-  color: #c4bdbd;
-  font-size: 1rem;
-  cursor: pointer;
-}
+  @media (max-width: 280px) {
+    .logo-home {
+      display: flex;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      box-shadow: 3px 3px 6px rgba(243, 243, 241, 0.925);
+    }
 
+    .main-title {
+      font-family: "Great Vibes", cursive;
+      font-size: 20px;
+    }
+    .container p {
+      text-align: center;
+      font-size: 14px;
+    }
 
-.controls button:hover {
-  color: #BBB;
-}
-
-@media screen and (max-width: 600px) {
-  .slide-text h1 {
-    font-size: 20px;
+    .btn {
+      display: block;
+      padding: 5px 10px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+    .btn2 {
+      display: block;
+      padding: 5px 10px;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      margin: 0 10px;
+      font-size: 12px;
+      background-color: #fff;
+    }
   }
 }
-  
-

@@ -64,6 +64,7 @@ const DetailPage = () => {
     mostrarMensajeEliminarFavorito();
   };
 
+
   return (
     <div className="detail_container">
       <div className="icons-detail">
@@ -75,9 +76,8 @@ const DetailPage = () => {
           )}
         </i>
       </div>
-      <h2 className="tittle_detail">{<span>{titulo}</span>}</h2>
+      <h2 className="title_detail">{<span>{titulo}</span>}</h2>
       <p className="number_detail">Himno: #{numero}</p>
-      {/* <img className='img_detail' src={`https://picsum.photos/1080/300?random=${numero}`} alt={titulo} /> */}
       <div className="text-container-detail">
         {parrafos.split(";").map((item, index) => (
           <div className="card-detail">

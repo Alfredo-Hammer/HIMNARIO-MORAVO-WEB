@@ -1,22 +1,25 @@
-
 .contenedor-titulos {
   width: 100%;
   height: 100%;
   display: block;
   flex-wrap: wrap;
   justify-content: center;
- 
   box-sizing: border-box;
   position: static;
   gap: 10px;
+  background: rgb(7, 46, 71);
 }
 
 .titulo {
   margin: 0;
 }
 
-a.titulo{
-  background: radial-gradient(circle, rgba(58, 24, 39, 0.998) 0%, rgb(2, 23, 46) 100%);
+a.titulo {
+  background: radial-gradient(
+    circle,
+    rgba(7, 23, 48, 0.998) 0%,
+    rgb(13, 27, 41) 100%
+  );
   transition: 0.3s;
   padding: 15px;
   border-radius: 8px;
@@ -29,12 +32,6 @@ a.titulo{
   cursor: pointer;
 }
 
-.titulo:hover {
-  background: radial-gradient(circle, rgba(184, 175, 179, 0.998) 0%, rgb(2, 23, 46) 100%);
-  transition: 0.3s;
-  color: rgb(226, 204, 8);
-}
-
 .numero {
   font-size: 20px;
   font-weight: bold;
@@ -45,6 +42,12 @@ a.titulo{
 .texto {
   font-size: 18px;
   color: #d3c7c7;
+}
+
+.titulo:hover {
+  background: rgb(7, 46, 71);
+  transition: 0.3s;
+  color: rgb(226, 204, 8);
 }
 
 @media screen and (max-width: 768px) {
@@ -66,5 +69,4 @@ a.titulo{
   .numero {
     font-size: 1rem;
   }
-  
 }

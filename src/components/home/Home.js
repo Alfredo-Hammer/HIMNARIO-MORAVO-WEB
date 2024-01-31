@@ -1,78 +1,28 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment } from "react";
 import "./Home.css";
-
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png"
+// import ReactPlayer from "react-player";
+// import video from "../assets/video/homeVideo.mp4";
 
 
 const Home = () => {
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  const slides = [
-    {
-      image:
-        "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE53ei4?ver=b8a9?text=Slide+1",
-      text: `No seas vencido por el mal, sino vence el mal con el bien. Romanos 12:21`,
-    },
-    {
-      image:
-        "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE53tTA?ver=4c23?text=Slide+2",
-      text: "Praesent bibendum eros eget ipsum lobortis ultricies.",
-    },
-    {
-      image:
-        "https://www.xtrafondos.com/descargar.php?id=3040&resolucion=3840x2160?text=Slide+3",
-      text: "Suspendisse quis magna eget libero vehicula blandit a sit amet augue.",
-    },
-  ];
-
-  //TODO: Add auto slide functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (slideIndex === slides.length - 1) {
-        setSlideIndex(0);
-      } else {
-        setSlideIndex(slideIndex + 1);
-      }
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [slides.length, slideIndex]);
-
-
-
-
-  const handlePrevClick = () => {
-    if (slideIndex === 0) {
-      setSlideIndex(slides.length - 1);
-    } else {
-      setSlideIndex(slideIndex - 1);
-    }
-  };
-
-  const handleNextClick = () => {
-    if (slideIndex === slides.length - 1) {
-      setSlideIndex(0);
-    } else {
-      setSlideIndex(slideIndex + 1);
-    }
-  };
-
   return (
     <Fragment>
-      <div className="slider-container">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={index === slideIndex ? "slide active" : "slide"}
-            style={{ backgroundImage: `url(${slide.image})` }}
-          >
-            <div className="slide-text">
-              <h1>{slide.text}</h1>
+      <div className="container">
+        <div className="content">
+          <img className="logo-home" src={logo} alt="logo-principal" />
+          {/* <div className="bgContainer">
+            <div className="overlay">
+              <video src={video} autoPlay loop muted />
             </div>
+          </div> */}
+          <h1 className="main-title">Himnario Moravo Miskito</h1>
+          <p>¡Alabad a Jehova Naciones todas!</p>
+          <div className="buttons">
+            <Link to="/titles" className="btn" >Buscar Himnos</Link>
+            <Link to="/buscar" className="btn2" >Buscar por numero</Link>
           </div>
-
-        ))}
-        <div className="controls">
-          <button onClick={handlePrevClick}> &#8249;</button>
-          <button onClick={handleNextClick}> &#8250;</button>
         </div>
       </div>
     </Fragment>

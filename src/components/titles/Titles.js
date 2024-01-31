@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import himnosData from '../../data/himnosData';
 import './Titles.css';
 
-const Titles = () => {
+const Titles = ({ himnosData }) => {
   const [himnos, setHimnos] = useState([]);
-  
+
   //Código para traer los datos del archivo del objeto local y mostrarlos en la pagina
   const [titulo, setTitulo] = useState('');
   const [numero, setNumero] = useState('');
@@ -22,16 +21,19 @@ const Titles = () => {
     }
   }, [numero, titulo, parrafos]);
 
+
+
   return (
     <div className="contenedor-titulos" >
-        {himnosData.map((himnos, index) => (
-          <Link to={`/detail/${himnos.numero}/${himnos.titulo}/${himnos.parrafos}`} key={index} className="titulo">
-            <div className="numero">{himnos.numero}</div>
-            <div className="texto">{himnos.titulo}</div>
-          </Link>
-        ))
-        }
-      </div>
+      {himnosData.map((himnos, index) => (
+
+        <Link to={`/himno/${himnos.numero}`} key={index} className="titulo">
+          <div className="numero">{himnos.numero}</div>
+          <div className="texto">{himnos.titulo}</div>
+        </Link>
+      ))
+      }
+    </div>
   )
 }
 

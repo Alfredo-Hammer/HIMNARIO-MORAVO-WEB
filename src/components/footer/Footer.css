@@ -1,6 +1,8 @@
 .footer {
+  bottom: 0;
+  left: 0;
   width: 100%;
-  background: radial-gradient(circle, rgba(185, 78, 124, 0.998) 0%, rgb(2, 23, 46) 100%);
+  background: rgb(7, 46, 71);
   color: #555;
   font-size: 16px;
   padding: 10px;
@@ -10,7 +12,6 @@
   display: block;
   width: 100%;
   margin: 0 auto;
-  
 }
 
 .footer-links a:hover {
@@ -42,19 +43,19 @@
   margin: 5px;
 }
 
-.footer-bottom span{
+.footer-bottom span {
   color: #797976;
   font-style: bold;
   text-decoration: none;
 }
 
-.link{
+.link {
   color: #ba9305;
   font-style: bold;
   font-size: 1rem;
   text-decoration: none;
 }
-.moravo{
+.moravo {
   font-size: 14px;
   color: #ba9305;
 }
@@ -62,5 +63,18 @@
 @media only screen and (max-width: 600px) {
   .footer-content {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 280px) {
+  .moravo {
+    font-size: 10px;
+    color: #ba9305;
+  }
+  .footer-bottom p {
+    font-size: 10px;
+  }
+  .link {
+    font-size: 12px;
   }
 }

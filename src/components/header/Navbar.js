@@ -1,7 +1,8 @@
-import React, {useState} from "react";
-import {FaBars, FaPlus} from "react-icons/fa";
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import { FaBars, FaPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,11 +22,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link className="navbar-brand" to="/">
-        <img
-          src="https://clipground.com/images/christian-logo-png-12.png
-        "
-          alt="logo-himnario"
-        />
+        <img className="main-logo" src={logo} alt="logo-himnario" />
+
       </Link>
       <i className="navbar-toggler" type="button" onClick={toggleNavbar}>
         <span>
@@ -39,8 +37,7 @@ const Navbar = () => {
       <div className={isOpen ? "navbar-collapse show" : "navbar-collapse"}>
         <ul className="navbar-nav">
           <Link className="nav-link" to="/home" onClick={closeMenu}>
-            <li className="nav-item"></li>
-            Inicio
+            <li className="nav-item">Inicio</li>
           </Link>
           <hr className="line" />
           <Link className="nav-link" to="/titles" onClick={closeMenu}>
@@ -93,6 +90,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
     </nav>
   );
 };
