@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 .himno-detail-container {
   display: flexbox;
   justify-content: center;
@@ -30,8 +32,9 @@
   color: rgb(235, 233, 229);
   font-style: bold;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
   margin: 10px 10px;
 }
 
@@ -101,7 +104,7 @@
   text-align: left;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .detail_container {
     display: flexbox;
     justify-content: center;
@@ -117,19 +120,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-top: 10px;
     padding: 10px;
   }
 
   .title_detail {
-    color: rgb(235, 233, 229);
+    color: rgb(233, 182, 80);
     font-style: bold;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 10px 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: uppercase;
   }
 
   .number_detail {
@@ -183,7 +188,7 @@
 
   .card-text-detail {
     color: #1e1e1e;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 20px 20px;
   }
@@ -193,12 +198,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 75%;
     height: 80%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     background-color: #021e30;
     box-shadow: 2px 2px 3px rgb(224, 212, 105);
@@ -229,12 +234,13 @@
     }
 
     .title_detail {
-      color: rgb(235, 233, 229);
+      color: rgb(233, 182, 80);
       font-style: bold;
       text-align: center;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 100;
       margin: 20px 20px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
 
     .number_detail {

@@ -15,7 +15,7 @@ body {
 
 .favorite_title {
   text-align: center;
-  font-size: 50px;
+  font-size: 35px;
   color: #e9e0e0;
   margin-bottom: 20px;
   font-weight: 100;
@@ -39,8 +39,14 @@ body {
   cursor: pointer;
 }
 
+.favorite_item:hover {
+  background: rgb(7, 46, 71);
+  transition: 0.3s;
+  color: rgb(226, 204, 8);
+}
+
 .numero-title {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
   color: #d3c7c7;
   margin-right: 20px;
@@ -79,5 +85,26 @@ body {
 
   .numero-title {
     font-size: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  .favorite_title {
+    font-size: 20px;
+  }
+
+  .favorite_item {
+    font-size: 16px;
+    font-family: "Roboto", cursive;
+    font-weight: 100;
+  }
+
+  .texto-title {
+    font-size: 15px;
+    font-family: "Roboto", cursive;
+    font-weight: 100;
+  }
+
+  .numero-title {
+    font-size: 15px;
   }
 }

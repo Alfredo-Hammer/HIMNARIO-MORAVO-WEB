@@ -80,11 +80,7 @@ const Navbar = () => {
               <h5 className="card-title">Powered by:</h5>
 
               {/* cuando el usuario haga click en la foto navegar ampliar la imagen */}
-              {
-                <Link to="/contact" className="link-item" onClick={closeMenu}>
-                  <p className="card-text">Apps Hammer</p>
-                </Link>
-              }
+              {<p className="card-text">Apps Hammer</p>}
               <p className="phone">+1 941 296 4916</p>
               <p className="card-text">
                 <small className="text-muted">

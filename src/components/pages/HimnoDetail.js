@@ -34,7 +34,7 @@ const HimnoDetail = ({ himnosData }) => {
     setFavorito(true);
   };
 
-  //Mensaje de favorito eliminado de la  libreria sweetalert2
+  //Mensaje de favorito eliminado 
   const mostrarMensajeEliminarFavorito = () => {
     Swal.fire({
       title: "Eliminado de favoritos",

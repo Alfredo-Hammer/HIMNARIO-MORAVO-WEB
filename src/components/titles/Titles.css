@@ -9,7 +9,6 @@
   gap: 10px;
   background: rgb(7, 46, 71);
 }
-
 .titulo {
   margin: 0;
 }
@@ -33,14 +32,14 @@ a.titulo {
 }
 
 .numero {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
   color: #d3c7c7;
   margin-right: 20px;
 }
 
 .texto {
-  font-size: 18px;
+  font-size: 1rem;
   color: #d3c7c7;
   font-family: "Roboto" "Courier New", Courier, monospace;
   font-weight: 100;
@@ -70,5 +69,24 @@ a.titulo {
 
   .numero {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .contenedor-titulos {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+  }
+  .titulo {
+    font-size: 15px;
+  }
+  .texto {
+    font-size: 14px;
+  }
+
+  .numero {
+    font-size: 15px;
   }
 }

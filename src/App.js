@@ -16,22 +16,15 @@ import analytics from "./Firebase/FirebaseAnalitics";
 function App() {
   return (
     <Fragment>
-
-      <ScrollToTopOnMount />
       <header>
+        <ScrollToTopOnMount />
         <Navbar />
       </header>
       <main>
-
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
-          <Route
-            path="/titles"
-            element={
-              <Titles himnosData={himnosData} />
-            }
-          ></Route>
+          <Route path="/titles" element={<Titles himnosData={himnosData} />}></Route>
           <Route path="/favoritos" element={<Favoritos />}></Route>
           <Route path="/buscar" element={<HimnoSearch />}></Route>
           <Route path="/himno/:numero/:titulo" element={<HimnoDetail himnosData={himnosData} />} />{/* Ruta dinámica para el detalle del himno */}
@@ -43,5 +36,4 @@ function App() {
     </Fragment>
   );
 }
-
 export default App;
