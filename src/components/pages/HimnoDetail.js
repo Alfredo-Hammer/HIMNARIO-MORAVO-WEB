@@ -11,8 +11,6 @@ const HimnoDetail = ({ himnosData }) => {
 
   const himno = himnosData.find(himno => himno.numero === parseInt(numero));
 
-
-
   useEffect(() => {
     const favorito = JSON.parse(localStorage.getItem("favorito")) || [];
     const favoritoFilter = favorito.filter((item) => item.numero === numero);

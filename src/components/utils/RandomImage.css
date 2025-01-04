@@ -1,0 +1,10 @@
+/* Estilo para el fondo de pantalla */
+.background {
+  /* Ajusta la imagen de fondo al tamaño de la ventana del navegador */
+  background-size: cover;
+  /* Centra la imagen de fondo */
+  background-position: center;
+  /* Establece un color de fondo de respaldo */
+  background-color: #f0f0f0;
+  height: 100vh; /* Puedes ajustar este color según tus preferencias */
+}

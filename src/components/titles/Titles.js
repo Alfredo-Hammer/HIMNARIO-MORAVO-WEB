@@ -26,7 +26,6 @@ const Titles = ({ himnosData }) => {
   return (
     <div className="contenedor-titulos" >
       {himnosData.map((himnos, index) => (
-
         <Link to={`/himno/${himnos.numero}/${himnos.titulo}`} key={index} className="titulo">
           <div className="numero">{himnos.numero}</div>
           <div className="texto">{himnos.titulo}</div>
